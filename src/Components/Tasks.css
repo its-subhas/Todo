@@ -1,0 +1,170 @@
+.tasksMainContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tasksContainer {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  font-size: large;
+  gap: 5px;
+}
+
+.task {
+  width: 45dvw;
+  min-height: 50px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+.date {
+  width: 25dvw;
+  min-height: 50px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+.del {
+  height: 50px;
+  width: 15dvw;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .tasksContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .task {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+  .date {
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+
+  .del {
+    width: 400px;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .tasksContainer {
+    font-size: medium;
+  }
+  .task {
+    width: 300px;
+  }
+
+  .date {
+    width: 300px;
+  }
+
+  .del {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .tasksContainer {
+    font-size: small;
+  }
+  .task {
+    width: 200px;
+  }
+
+  .date {
+    width: 200px;
+  }
+
+  .del {
+    width: 200px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 226px) {
+  .tasksContainer {
+    font-size: small;
+    padding: 5px;
+  }
+  .task {
+    width: 150px;
+  }
+
+  .date {
+    width: 150px;
+  }
+
+  .del {
+    width: 150px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 165px) {
+  .tasksContainer {
+    font-size: smaller;
+  }
+  .task {
+    width: 100px;
+    padding: 2px;
+  }
+
+  .date {
+    width: 100px;
+    padding: 2px;
+  }
+
+  .del {
+    width: 100px;
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 115px) {
+  .tasksContainer {
+    font-size: xx-small;
+    padding: 2px;
+  }
+  .task {
+    width: 50px;
+    padding: 1px;
+  }
+
+  .date {
+    width: 50px;
+    padding: 1px;
+  }
+
+  .del {
+    width: 50px;
+  }
+}

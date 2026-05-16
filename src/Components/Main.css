@@ -1,0 +1,159 @@
+.main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+  gap: 5px;
+}
+
+.inputContainer {
+  width: 45dvw;
+  height: 50px;
+  padding: 2px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inputDateContainer {
+  height: 50px;
+  width: 25dvw;
+  padding: 2px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.inputDateContainer:hover {
+  cursor: pointer;
+}
+.inputDateContainer::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.addContainer {
+  height: 50px;
+  width: 15dvw;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .inputContainer {
+    width: 400px;
+    border: 1px solid black;
+  }
+
+  .inputDateContainer {
+    width: 400px;
+    border: 1px solid black;
+  }
+
+  .addContainer {
+    width: 400px;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main {
+    font-size: medium;
+  }
+  .inputContainer {
+    width: 300px;
+  }
+
+  .inputDateContainer {
+    width: 300px;
+  }
+
+  .addContainer {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .main {
+    font-size: small;
+  }
+  .inputContainer {
+    width: 200px;
+  }
+
+  .inputDateContainer {
+    width: 200px;
+  }
+
+  .addContainer {
+    width: 200px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 226px) {
+  .main {
+    font-size: small;
+    padding: 5px;
+  }
+  .inputContainer {
+    width: 150px;
+    padding: 2px 5px;
+    text-align: center;
+  }
+
+  .inputDateContainer {
+    width: 150px;
+    padding: 2px 5px;
+    text-align: center;
+  }
+
+  .addContainer {
+    width: 150px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 165px) {
+  .main {
+    font-size: smaller;
+  }
+  .inputContainer {
+    width: 100px;
+    padding: 2px;
+  }
+
+  .inputDateContainer {
+    width: 100px;
+    padding: 2px;
+  }
+
+  .addContainer {
+    width: 100px;
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 115px) {
+  .main {
+    font-size: xx-small;
+    padding: 2px;
+  }
+  .inputContainer {
+    width: 50px;
+    padding: 1px;
+  }
+
+  .inputDateContainer {
+    width: 50px;
+    padding: 1px;
+  }
+
+  .addContainer {
+    width: 50px;
+  }
+}
