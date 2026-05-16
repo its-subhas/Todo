@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Tasks from "./Components/Tasks";
 import TodoContextProvider from "./Store/TodoContextProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Tasks />
         </div>
       </TodoContextProvider>
+      <Analytics />
     </>
   );
 }
